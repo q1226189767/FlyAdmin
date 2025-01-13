@@ -28,7 +28,7 @@ FlyAdmin 是一个现代化的后台管理系统模板，基于 React 18、TypeS
 
 ```bash
 # 克隆项目
-git clone https://github.com/your-username/flyadmin.git
+git clone https://github.com/q1226189767/FlyAdmin.git
 
 # 进入项目目录
 cd flyadmin
