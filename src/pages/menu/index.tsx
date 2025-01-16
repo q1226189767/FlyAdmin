@@ -11,6 +11,7 @@ import to from 'await-to-js';
 import { MenuTypeName } from './interface';
 import NewAndEditForm from './new-edit-form';
 import menuService, { Menu } from './service';
+import { antdUtils } from '@/utils/antd';
 
 function MenuPage() {
   const [dataSource, setDataSource] = useState<Menu[]>([]);
@@ -39,6 +40,22 @@ function MenuPage() {
     } else {
       curRowData._loaded_ = false;
       expandHandle(true, curRowData);
+    }
+  };
+
+  const showDeleteConfirm = (record: Menu) => {
+    antdUtils.modal.confirm({
+      title: t('QwASeiBn' /* 确定要删除吗？ */),
+      onOk: () => deleteHandle(record),
+    });
+  };
+
+  const deleteHandle = async (record: Menu) => {
+    console.log(record, 'deleteHandle');
+    const [error] = await to(menuService.removeMenu(record.id!));
+    if (!error) {
+      antdUtils.message?.success(t('XjxuXExi' /* 删除成功 */));
+      actionRef.current?.reload();
     }
   };
 
@@ -119,6 +136,13 @@ function MenuPage() {
               }}
             >
               {t('wXpnewYo' /* 编辑 */)}
+            </LinkButton>
+            <LinkButton
+              onClick={() => {
+                showDeleteConfirm(record);
+              }}
+            >
+              {t('HJYhipnp' /* 删除 */)}
             </LinkButton>
           </Space>
         );
