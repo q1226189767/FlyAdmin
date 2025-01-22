@@ -38,7 +38,7 @@ const aboutPage: React.FC = () => {
     <>
       <div className="w-full h-full flex p-10">
         <div className="flex-[2.5] mr-5">
-          <Card className="h-[620px] py-2 px-4 flex flex-col">
+          <Card className="h-[620px] py-2 px-4 flex flex-col shadow-lg">
             <div className="h-[300px] flex items-center flex-col justify-start">
               <img
                 className="w-[100px] aspect-auto rounded-[50%]"
@@ -49,7 +49,7 @@ const aboutPage: React.FC = () => {
                 <h6 className="mt-6 text-xl font-sans text-[#000000d8] dark:text-white font-medium ">
                   Monster
                 </h6>
-                <span>越努力越幸运</span>
+                {/* <span>越努力越幸运</span> */}
               </div>
               <div className="flex flex-col self-start justify-start mt-10">
                 <span>
@@ -92,7 +92,7 @@ const aboutPage: React.FC = () => {
             </div>
           </Card>
         </div>
-        <Card className=" flex-[5.5]  py-5">
+        <Card className=" flex-[5.5]  py-5 shadow-lg">
           <Tabs defaultActiveKey="1" items={items} onChange={onChange} />
         </Card>
       </div>

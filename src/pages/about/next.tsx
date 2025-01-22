@@ -38,7 +38,7 @@ const NextPage = () => {
                 https://www.electronjs.org/
               </a>
               <span className="ml-6 text-[#0000003f] dark:text-white">
-                2023-02-23 01:00
+                2025-01-22 10:00
               </span>
             </p>
           </Col>
@@ -82,7 +82,7 @@ const NextPage = () => {
                 https://golang.google.cn/doc/
               </a>
               <span className="ml-6 text-[#0000003f] dark:text-white">
-                2023-02-23 01:00
+                2025-01-22 10:00
               </span>
             </p>
           </Col>

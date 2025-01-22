@@ -40,7 +40,7 @@ const CurrentPage = () => {
               <span className="tracking-wide"> 发布在</span>
               <a href="https://vuejs.org/"> https://vuejs.org</a>
               <span className="ml-6 text-[#0000003f] dark:text-white">
-                2023-02-23 01:00
+                2025-01-22 10:00
               </span>
             </p>
           </Col>
@@ -82,7 +82,7 @@ const CurrentPage = () => {
                 https://element-plus.gitee.io/zh-CN/component/button.html
               </a>
               <span className="ml-6 text-[#0000003f] dark:text-white">
-                2023-02-23 02:00
+                2025-01-22 10:00
               </span>
             </p>
           </Col>
@@ -120,7 +120,7 @@ const CurrentPage = () => {
               <span className="tracking-wide"> 发布在</span>
               <a href="https://reactjs.org/">https://reactjs.org/</a>
               <span className="ml-6 text-[#0000003f] dark:text-white">
-                2023-02-23 01:00
+                2025-01-22 10:00
               </span>
             </p>
           </Col>
@@ -160,7 +160,7 @@ const CurrentPage = () => {
                 https://ant.design/components/overview-cn//
               </a>
               <span className="ml-6 text-[#0000003f] dark:text-white">
-                2023-02-23 02:00
+                2025-01-22 10:00
               </span>
             </p>
           </Col>
@@ -201,7 +201,7 @@ const CurrentPage = () => {
                 https://www.tailwindcss.cn/
               </a>
               <span className="ml-6 text-[#0000003f] dark:text-white">
-                2023-02-23 03:00
+                2025-01-22 10:00
               </span>
             </p>
           </Col>
@@ -240,7 +240,7 @@ const CurrentPage = () => {
               <span className="tracking-wide"> 发布在</span>
               <a href="https://docs.nestjs.com/">https://docs.nestjs.com/</a>
               <span className="ml-6 text-[#0000003f] dark:text-white">
-                2023-02-23 02:00
+                2025-01-22 10:00
               </span>
             </p>
           </Col>
