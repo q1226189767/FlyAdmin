@@ -122,6 +122,7 @@ function MenuPage() {
         return (
           <Space split={<Divider type="vertical" />}>
             <LinkButton
+              v-auth="menu:add"
               onClick={() => {
                 setFormVisible(true);
                 setCurRowData(record);
@@ -130,14 +131,16 @@ function MenuPage() {
               {t('hRiGeMNr' /* 添加 */)}
             </LinkButton>
             <LinkButton
+              v-auth="menu:edit"
               onClick={() => {
-                setEditData(record);
+                setEditData({ ...record, authCode: 'menu:edit' });
                 setFormVisible(true);
               }}
             >
               {t('wXpnewYo' /* 编辑 */)}
             </LinkButton>
             <LinkButton
+              v-auth="menu:del"
               onClick={() => {
                 showDeleteConfirm(record);
               }}

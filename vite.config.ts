@@ -47,20 +47,16 @@ export default defineConfig({
     host: true,
     proxy: {
       '/api': {
-        // target: 'http://localhost:7001',
-        // http://172.31.221.8:7001
         target: 'http://123.56.101.254:7001',
         changeOrigin: true,
       },
       '/file': {
         target: 'http://123.56.101.254:9002',
-        // target: 'http://localhost:9002',
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/file/, ''),
       },
       '/ws': {
         target: 'ws://123.56.101.254:7001',
-        // target: 'ws://localhost:7001',
         changeOrigin: true,
         ws: true,
         rewrite: (path) => path.replace(/^\/ws/, ''),

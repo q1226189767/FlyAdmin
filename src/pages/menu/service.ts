@@ -17,6 +17,7 @@ export interface Menu {
   hasChild?: boolean;
   children?: Menu[] | null;
   apis?: { method: string; path: string }[];
+  authCode?: string;
 }
 
 export interface Api {

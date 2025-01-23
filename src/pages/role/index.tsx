@@ -50,6 +50,7 @@ function RolePage() {
       renderText: (id: string, record: Role) => (
         <Space split={<Divider type="vertical" />}>
           <LinkButton
+            v-auth="role:assignMenu"
             onClick={async () => {
               setCurRoleId(id);
               setRoleMenuVisible(true);
@@ -58,6 +59,7 @@ function RolePage() {
             {t('DvINURho' /* 分配菜单 */)}
           </LinkButton>
           <LinkButton
+            v-auth="role:edit"
             onClick={() => {
               setEditData(record);
               setFormOpen(true);
@@ -76,7 +78,9 @@ function RolePage() {
             }}
             placement="topRight"
           >
-            <LinkButton>{t('HJYhipnp' /* 删除 */)}</LinkButton>
+            <LinkButton v-auth="role:del">
+              {t('HJYhipnp' /* 删除 */)}
+            </LinkButton>
           </Popconfirm>
         </Space>
       ),
@@ -108,7 +112,12 @@ function RolePage() {
         }}
         headerTitle={
           <Space>
-            <Button onClick={openForm} type="primary" icon={<PlusOutlined />}>
+            <Button
+              onClick={openForm}
+              type="primary"
+              icon={<PlusOutlined />}
+              v-auth="role:create"
+            >
               {t('morEPEyc' /* 新增 */)}
             </Button>
           </Space>

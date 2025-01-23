@@ -97,6 +97,7 @@ function UserPage() {
         record.userName !== 'user' && (
           <Space size="middle">
             <LinkButton
+              v-auth="user:edit"
               onClick={() => {
                 setEditData(record);
                 setFormOpen(true);
@@ -115,7 +116,9 @@ function UserPage() {
                 }
               }}
             >
-              <LinkButton>{t('HJYhipnp' /* 删除 */)}</LinkButton>
+              <LinkButton v-auth="user:del">
+                {t('HJYhipnp' /* 删除 */)}
+              </LinkButton>
             </Popconfirm>
           </Space>
         ),
@@ -147,7 +150,12 @@ function UserPage() {
         columns={columns || []}
         headerTitle={
           <Space>
-            <Button onClick={openForm} type="primary" icon={<PlusOutlined />}>
+            <Button
+              onClick={openForm}
+              type="primary"
+              icon={<PlusOutlined />}
+              v-auth="user:create"
+            >
               {t('morEPEyc' /* 新增 */)}
             </Button>
           </Space>
