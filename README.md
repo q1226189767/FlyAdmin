@@ -24,6 +24,10 @@ FlyAdmin 是一个现代化的后台管理系统模板，基于 React 18、TypeS
 - 代码规范：ESLint + Prettier
 - 提交规范：Commitlint
 
+## 预览地址
+
+您可以通过以下链接预览项目：[项目预览](http://123.56.101.254:52000/)
+
 ## 📦 安装使用
 
 ```bash
@@ -85,6 +89,10 @@ pnpm build
 - 使用 Prettier 进行代码格式化
 - 提交代码时需要符合 Commitlint 规范
 
+### 国际化支持
+
+我们推荐使用 VSCode 插件 [easy-i18n-helper](https://marketplace.visualstudio.com/items?itemName=easy-i18n-helper) 来简化国际化流程。该插件支持自动获取文件代码中的中文，自动翻译成各种语言，并自动保存到本地。
+
 ### 提交规范
 
 - `feat`: 新功能
@@ -99,3 +107,10 @@ pnpm build
 ## 📝 开源协议
 
 [MIT License](LICENSE)
+
+## 特别鸣谢
+
+感谢以下人员对本项目的贡献：
+
+- dbfu
+- 快手檬
