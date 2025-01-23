@@ -15,7 +15,7 @@ function LoginForm({
   return (
     <Form
       className="login-form"
-      initialValues={{ accountNumber: 'admin', password: '123456' }}
+      initialValues={{ accountNumber: 'test', password: '123456' }}
       onFinish={login}
       size="large"
     >

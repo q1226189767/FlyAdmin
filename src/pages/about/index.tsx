@@ -1,3 +1,4 @@
+import { t } from '@/utils/i18n';
 import {
   CompassOutlined,
   EnvironmentOutlined,
@@ -18,17 +19,17 @@ const onChange = (key: string) => {
 const items: TabsProps['items'] = [
   {
     key: '1',
-    label: '熟悉',
+    label: t('RPEItePr' /* 熟悉 */),
     children: <CurrentPage />,
   },
   {
     key: '2',
-    label: '掌握',
+    label: t('XOuyfSDb' /* 掌握 */),
     children: <MasterPage />,
   },
   {
     key: '3',
-    label: '想学',
+    label: t('HJMBCYkK' /* 想学 */),
     children: <NextPage />,
   },
 ];
@@ -43,7 +44,7 @@ const aboutPage: React.FC = () => {
               <img
                 className="w-[100px] aspect-auto rounded-[50%]"
                 src="/images/author.jpg"
-                alt="失败"
+                alt={t('HaLzGNdm' /* 失败 */)}
               />
               <div className="flex flex-col justify-center items-center">
                 <h6 className="mt-6 text-xl font-sans text-[#000000d8] dark:text-white font-medium ">
@@ -54,40 +55,44 @@ const aboutPage: React.FC = () => {
               <div className="flex flex-col self-start justify-start mt-10">
                 <span>
                   <MinusSquareOutlined />{' '}
-                  <span className="ml-1">前端爱好者</span>
+                  <span className="ml-1">{t('kQgYFwML' /* 前端爱好者 */)}</span>
                 </span>
                 <span className="mt-1">
                   <CompassOutlined />
-                  <span className="ml-1">一站式前端内容网站</span>
+                  <span className="ml-1">
+                    {t('AbmkKtbi' /* 一站式前端内容网站 */)}
+                  </span>
                 </span>
                 <span className="mt-1">
                   <EnvironmentOutlined />
-                  <span className="ml-1">广东茂名</span>
+                  <span className="ml-1">{t('CgbSxHyw' /* 广东茂名 */)}</span>
                 </span>
               </div>
             </div>
             <Divider></Divider>
             <div className="h-[100px] flex flex-col justify-start">
               <div className="h-[14px]">
-                <span>标签</span>
+                <span>{t('ZhPVxGdJ' /* 标签 */)}</span>
               </div>
               <Space className="flex-1 mt-3 flex justify-start flex-wrap">
-                <Tag color="#7c4dff">有想法</Tag>
-                <Tag color="#7c4dff">执行力强</Tag>
-                <Tag color="#7c4dff">交朋友</Tag>
-                <Tag color="#7c4dff">喜欢篮球</Tag>
-                <Tag color="#7c4dff">热爱前端</Tag>
-                <Tag color="#7c4dff">挣钱</Tag>
+                <Tag color="#7c4dff">{t('VjAFlyWg' /* 有想法 */)}</Tag>
+                <Tag color="#7c4dff">{t('RsqOnrUH' /* 执行力强 */)}</Tag>
+                <Tag color="#7c4dff">{t('hlUpsLPv' /* 交朋友 */)}</Tag>
+                <Tag color="#7c4dff">{t('loeMJFYN' /* 喜欢篮球 */)}</Tag>
+                <Tag color="#7c4dff">{t('RCKlrgpk' /* 热爱前端 */)}</Tag>
+                <Tag color="#7c4dff">{t('WUBhCShB' /* 挣钱 */)}</Tag>
               </Space>
               <Divider></Divider>
             </div>
             <div className="h-[200px] flex flex-col justify-around">
               <div className="h-[14px] mt-4">
-                <span>特别鸣谢</span>
+                <span>{t('SBWISjry' /* 特别鸣谢 */)}</span>
               </div>
               <div className="flex-1 flex justify-start mt-4 items-start">
                 <Avatar src="/images/dbfu.awebp" alt="" />
                 <span className="mt-[6px] ml-2">dbfu</span>
+                <Avatar src="/images/meng.jpg" alt="" className="ml-5" />
+                <span className="mt-[6px] ml-2">meng</span>
               </div>
             </div>
           </Card>

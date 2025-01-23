@@ -15,7 +15,7 @@ export const routes: RouteObject[] = [
   },
   {
     path: '/',
-    element: <Navigate to="/dashboard" />,
+    element: <Navigate to="/about" />,
   },
   {
     path: '*',
