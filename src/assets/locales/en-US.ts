@@ -213,4 +213,9 @@ export default {
   eHkDrlTL: 'Cross platform',
   oKWVILzH:
     'Go is expressive, concise, clean, and efficient. Its concurrency allows for easy writing of programs that fully utilize multi-core and networked machines through various mechanisms, while its novel type system enables flexible and modular program construction. Go can be quickly compiled into machine code, but it has the convenience of garbage collection and the powerful feature of runtime reflection. This is a fast, statically typed, compiled language that feels like a dynamically typed, interpreted language.',
+  BkVpkOIA: 'stop it',
+  okHBWgOX: 'function',
+  dfxNlKVZ: 'Horizontal layout',
+  RumZvaQc: 'Vertical layout',
+  LQuElcZv: 'Random rearrangement',
 };

@@ -1,0 +1,10 @@
+# 排除本地化文件夹
+**/locales/**
+@locales/**
+
+# 其他常见需要排除的文件
+node_modules
+dist
+build
+coverage
+.next 
